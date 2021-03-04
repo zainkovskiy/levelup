@@ -55,6 +55,11 @@
   .composition_text{
     font-size: 14px;
   }
+  .promo_foot{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .promo_foot_img{
     width: 65%;
   }

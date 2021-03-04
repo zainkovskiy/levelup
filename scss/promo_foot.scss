@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 30px 10px;
   background: linear-gradient(0deg, rgba(90,28,83,1) 0%, rgba(255,255,255,1) 100%);
   &_wrap{
     display: flex;
@@ -27,7 +27,7 @@
     letter-spacing: 1.36px;
     color: #f0b600;
     list-style-type: none;
-    padding: 0 10px;
+    padding: 0;
     text-align: center;
   }
   &_item{
