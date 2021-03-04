@@ -1,0 +1,42 @@
+.promo_head{
+  position: relative;
+  &_title{
+    font-family: "Impact", sans-serif;
+    font-size: 36px;
+    color: #f0b600;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #5a1c53;
+  }
+  &_video{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  &_img{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 15%;
+  }
+  &_list{
+    font-family: "Impact", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.36px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    color: #f0b600;
+  }
+  &_item{
+    padding: 5px;
+  }
+  &_btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

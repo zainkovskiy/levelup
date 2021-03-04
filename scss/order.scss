@@ -1,0 +1,110 @@
+@keyframes anim {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.order{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(90,28,83,1) 100%);
+  padding: 30px 0;
+  &_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_img{
+    width: 50%;
+  }
+  &_price{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    &_old{
+      font-family: "Impact", sans-serif;
+      font-size: 25px;
+      color: black;
+      text-decoration: line-through;
+      margin: 0 30px 0 0;
+    }
+    &_new{
+      font-family: "Impact", sans-serif;
+      font-size: 36px;
+      color: #ff0d0d;
+      animation: anim 1s infinite;
+    }
+  }
+  &_form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 300px;
+    margin: 0 60px;
+    &_input{
+      padding: 10px 10px;
+      border: 3px solid #80457a;
+      border-radius: 10px;
+    }
+    &_btn{
+      align-self: center;
+    }
+  }
+}
+.hint_name, .hint_phone{
+  visibility: hidden;
+}
+.in_name:focus ~.hint_name{
+  visibility: visible;
+}
+.in_phone:focus ~.hint_phone{
+  visibility: visible;
+}
+.order_form_input, .order_form_btn{
+  outline: none;
+  margin: 5px 0;
+}
+
+.order_head{
+  font-family: "Impact", sans-serif;
+  font-size: 36px;
+  color: #f0b600;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.order_time{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  &_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 30px;
+  }
+  &_num{
+    padding: 15px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  &_text{
+    padding-top: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+  }
+}
+
+
+

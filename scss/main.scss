@@ -1,0 +1,26 @@
+body{
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.btn_project{
+  padding: 10px 48px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #80457a;
+  background-color: #e2bb33;
+  border: 3px solid #80457a;
+  border-radius: 10px;
+  &:hover{
+    color: #e2bb33;
+    background-color: #80457a;
+    text-decoration: none;
+  }
+  &:active{
+    color: #80457a;
+    background-color: #e2bb33;
+  }
+}
